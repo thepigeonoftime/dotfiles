@@ -1,5 +1,7 @@
 # dotfiles
 
+
+
 *Highly* experimental!
 
 Better take a look at:  
@@ -10,12 +12,24 @@ Better take a look at:
 
 From which I took inspiration or plainly copied  
 
+
+
+##Contents
+
+***security.sh***
+
+Mostly based around security and removing 
+* Disable / move unnecessary LaunchAgents|Daemons ( hopefully without breaking anything, everything is tested on my machine)
+* write defaults (security / convenience)
+* move / remove annoying mac default apps 
+
+ 
+### things to be done:
 ---
 
-##### To Dos:
-
 * .security  
-	Detailed Description of LaunchAgents and -Daemons 
+	*	Detailed Description of LaunchAgents and -Daemons 
+	* move / remove annoying mac default apps
 
 * .osx   
 	Mac Apps  
