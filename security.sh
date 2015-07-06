@@ -4,7 +4,7 @@
 
 # Alot of these configs have been taken from the various places
 # on the web, most from here
-# https://github.com/mathiasbynens/dotfiles/blob/master/.osx
+# https://gist.github.com/brandonb927/3195465
  
 # Set the colours you can use
 black='\033[0;30m'
