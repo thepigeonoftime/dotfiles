@@ -1,5 +1,7 @@
 #!/bin/sh
  
+
+
 # Alot of these configs have been taken from the various places
 # on the web, most from here
 # https://github.com/mathiasbynens/dotfiles/blob/master/.osx
@@ -63,13 +65,13 @@ while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 ###############################################################################
 
 # Set computer name (as done via System Preferences → Sharing)
-#sudo scutil --set ComputerName "0x6D746873"
-#sudo scutil --set HostName "0x6D746873"
-#sudo scutil --set LocalHostName "0x6D746873"
-#sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.server NetBIOSName -string "0x6D746873"
+# sudo scutil --set ComputerName "0x6D746873"
+# sudo scutil --set HostName "0x6D746873"
+# sudo scutil --set LocalHostName "0x6D746873"
+# sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.server NetBIOSName -string "0x6D746873"
 
 # Set standby delay to 24 hours (default is 1 hour)
-#pmset -a standbydelay 86400
+pmset -a standbydelay 86400
 
 # Disable the sound effects on boot
 nvram SystemAudioVolume=" "
@@ -155,7 +157,7 @@ fi
 
 
 echo ""
-cecho "Do you also want to move the Daemons|Agents into a separate 'disabled'-directory, for better overview? (e.g. /System/Library/LaunchAgentsDisabled)
+cecho "Move the LaunchDaemons|Agents into a separate 'disabled'-directory, for better overview? (e.g. /System/Library/LaunchAgentsDisabled)
 echo "" " $red
 cecho "(y/n)" $red
 read -r response
