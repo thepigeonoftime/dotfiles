@@ -1,10 +1,10 @@
 #!/bin/sh
  
-
-
 # Alot of these configs have been taken from the various places
 # on the web, most from here
 # https://gist.github.com/brandonb927/3195465
+# and here
+# https://github.com/meson10/mac_tej/blob/master/nos.sh
  
 # Set the colours you can use
 black='\033[0;30m'
@@ -271,6 +271,20 @@ if [[ $response =~ ^([yY][eE][sS]|[yY])$ ]]; then
 	
 fi
 
+
+
+
+	
+###############################################################################
+# Misc Program Tweaks 					                                      #
+###############################################################################
+
+
+
+
+
+
+
 echo ""
 cecho "Apply miscellaneous Application modifications?" $red
 cecho "(y/n)" $red
@@ -444,6 +458,48 @@ if [[ $response =~ ^([yY][eE][sS]|[yY])$ ]]; then
 	defaults write com.google.Chrome.canary PMPrintingExpandedStateForPrint2 -bool true
 	
 fi	
+
+#---------------------------------------------------------------------
+# I dont use these Applications anyway.
+#---------------------------------------------------------------------
+
+
+echo ""
+cecho "Delete unpleasant proprietary Mac Apps? (iBooks, Reminders, Stickies, Notes, Photo\ Booth, DVD\ Player, Mission\ Control, Dictionary, Game\ Center, Chess, Mail, Messages, FaceTime, Maps)" $red
+cecho "(y/n)" $red
+read -r response
+if [[ $response =~ ^([yY][eE][sS]|[yY])$ ]]; then
+
+	sudo rm -rf /Applications/iBooks.app/
+	sudo rm -rf /Applications/Reminders.app/
+	sudo rm -rf /Applications/Stickies.app/
+	sudo rm -rf /Applications/Notes.app/
+	sudo rm -rf /Applications/Photo\ Booth.app/
+	sudo rm -rf /Applications/DVD\ Player.app/
+	sudo rm -rf /Applications/Mission\ Control.app/
+	sudo rm -rf /Applications/Dictionary.app/
+	sudo rm -rf /Applications/Game\ Center.app/
+	sudo rm -rf /Applications/Chess.app/
+	sudo rm -rf /Applications/Mail.app/
+	sudo rm -rf /Applications/Messages.app/
+	sudo rm -rf /Applications/FaceTime.app/
+	sudo rm -rf /Applications/Maps.app/
+
+## If you wanna go deep: ##
+
+#sudo rm -rf /Applications/Automator.app/
+#sudo rm -rf /Applications/TextEdit.app/
+#sudo rm -rf /Applications/Dashboard.app/
+#sudo rm -rf /Applications/Calculator.app/
+#sudo rm -rf /Applications/Calendar.app/
+#sudo rm -rf /System/Library/Screen\ Savers
+#sudo rm -rf /System/Library/Frameworks/Automator.framework/
+#sudo rm -rf /System/Library/CoreServices/System\ Image\ Utility.app/Contents/Library/Automator
+#sudo rm -rf /System/Library/CoreServices/Automator\ Runner.app
+#sudo rm -rf /System/Library/CoreServices/Automator\ Launcher.app/
+
+fi
+
 ###############################################################################
 # Kill affected applications                                                  #
 ###############################################################################
@@ -465,3 +521,5 @@ if [[ $response =~ ^([yY][eE][sS]|[yY])$ ]]; then
 fi
 
 echo "Done. Note that some of these changes require a logout/restart to take effect."	
+
+
