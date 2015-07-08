@@ -21,7 +21,7 @@ From which I took inspiration or plainly copied
 ***security.sh***
 
 Mostly based around security and relief of unpleasant apple features
-* Disable / move unnecessary bloat LaunchAgents|Daemons ( hopefully without breaking anything - *no guarantess* - but everything's tested on my machine)
+* Disable / move unnecessary bloat LaunchAgents|Daemons ( hopefully without breaking anything - *no guarantees* - but everything's tested on my machine)
 * write defaults (security / convenience)
 * move / remove unpleasant proprietary mac apps like iBooks
 
