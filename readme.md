@@ -34,9 +34,9 @@ Mostly based around security and relief of unpleasant apple features
 	* move / remove annoying mac default apps
 
 * .osx   
-	Mac Apps  
-	UI Fixes  
-	SSD related   
+	* Add new parts of Mathias Byrnes' [OS X defaultsscript](https://github.com/mathiasbynens/dotfiles/blob/master/.osx)
+	* UI Fixes  
+	* SSD related   
 * .zsh  
 * .git  
 
